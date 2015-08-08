@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script src="js/isotope.pkgd.js"></script>
+<script src="js/camera.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<!--<![endif]-->
+<script>
+$(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('.gallery .gall_item').touchTouch();
+ });
+ $(document).ready(function(){
+     jQuery('#camera_wrap').camera({
+      loader: false,
+      pagination: true ,
+      minHeight: '500',
+      thumbnails: false,
+      height: '44.42708333333333%',
+      caption: true,
+      navigation: false,
+      fx: 'mosaic'
+    });
+    $('.gallery .gall-item').touchTouch();
+  });
+</script>
+
+</head>
+<body>
+
+<section id="portfolio" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+      <h2 class="color2">My Portfolio</h2>
+      <div id="filters" class="button-group">
+        <a href="#" class="btn is-checked" data-filter="*">Show all</a>
+        <a href="#" class="btn" data-filter=".ill">Illustration</a>
+        <a href="#" class="btn" data-filter=".photo">Photography</a>
+        <a href="#" class="btn" data-filter=".design">Design</a>
+      </div>
+      <div class="el gallery" id="isotope">
+        <div class="element design">
+          <div>
+            <a href="images/big1.jpg" class="gall-item"><img src="images/gal_img1.jpg" alt=""><span></span></a>
+        </div>
+        </div>
+        <div class="element photo">
+          <div>
+            <a href="images/big2.jpg" class="gall-item"><img src="images/gal_img2.jpg" alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="element  photo">
+          <div>
+            <a href="images/big3.jpg" class="gall-item"><img src="images/gal_img3.jpg" alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="element ill">
+          <div>
+            <a href="images/big4.jpg" class="gall-item"><img src="images/gal_img4.jpg" alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="element ill">
+          <div>
+            <a href="images/big5.jpg" class="gall-item"><img src="images/gal_img5.jpg" alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="element design">
+          <div>
+            <a href="images/big6.jpg" class="gall-item"><img src="images/gal_img6.jpg" alt=""><span></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/isotop_ini.js"></script>
+
+</body>
+</html>
+
